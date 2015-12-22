@@ -1,0 +1,18 @@
+# DUCKER #
+## GIT tracing: ##
+    for tracing repo information Mavanagaiata plugin is used.
+    It can generate needed information as java class, that can be used code.
+    As example in entry point of application we log current git tag
+
+## To run: ##
+    If you use some IDE(IDEA, Eclipse), that provides tools with working with Maven,
+    you can import this project using .pom file, and your IDE will generate all needed files
+
+    After maven will download all files, need create  EntryPoint config with specific parameters:
+    need run a maven goal git-info before launching application.
+
+    For this in IDEA in "Edit Configuration" window need click to green plus icon near "Before launching ..."
+    and choose "Run Maven Goal" and write "git-info", after this steps each time IDEA will generate correct files in target folder that is ignored by git
+
+    to see working project, after starting application go to your link [http:\\localhost:8081](Link URL)
+    value of current port can be found application.prgit operties file.
